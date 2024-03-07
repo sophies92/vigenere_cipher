@@ -10,9 +10,9 @@ int main(int argc, char* argv[])
     char choice;
 
     std::cout << "E - encode word" << std::endl << "D - decode word" << std::endl;
-    std::cin >> choice;
-
+    choice = std::getchar();
     choice = std::toupper(choice);
+    std::cin.ignore(INT64_MAX, '\n');
 
     c.askForInput();
     c.calcFullKey();

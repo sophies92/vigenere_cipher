@@ -45,11 +45,11 @@
     void cipher::askForInput()
     {
         std::cout << "Enter value for Word: ";
-        std::cin >> word;
+        std::getline(std::cin, word, '\n');
         std::cout << std::endl;
 
         std::cout << "Enter value for Key: ";
-        std::cin >> key;
+        std::getline(std::cin, key, '\n');
         std::cout << std::endl;
     }
 
