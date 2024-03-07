@@ -73,6 +73,7 @@
 
     int cipher::getAlphaNumberValue(char c)
     {
+        c = std::tolower(c);
         for(int i = 0; i < 26; ++i)
         {
             if(c == alpha[i])
