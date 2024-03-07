@@ -4,7 +4,11 @@ class cipher
         cipher();
         std::string returnWord();
         std::string returnKey();
-        std::string returnReturnWord();
+        std::string returnFullKey();
+        std::string returnDecodedWord();
         void askForInput();
-        std::string calcFullKey();
+        void calcFullKey();
+        int getAlphaNumberValue(char);
+        void encode();
+        void decode();
 };
